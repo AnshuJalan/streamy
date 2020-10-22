@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import GoogleAuth from "./GoogleAuth";
+
 const Header = () => {
   const [expanded, setExpanded] = useState(false);
 
@@ -23,6 +25,9 @@ const Header = () => {
               <Link className="nav-link" to="/">
                 All Streams
               </Link>
+            </li>
+            <li className="nav-item">
+              <GoogleAuth />
             </li>
           </ul>
         </div>
