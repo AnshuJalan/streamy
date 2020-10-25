@@ -7,7 +7,7 @@ const Header = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div className="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
       <div className="container">
         <Link className="navbar-brand" to="/">
           Streamy
