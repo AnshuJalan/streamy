@@ -13,8 +13,15 @@ const StreamList = ({ streams, currentUserId, isSignedIn, fetchStreams }) => {
     if (stream.userId === currentUserId) {
       return (
         <div>
-          <button className="btn btn-primary mr-2">Edit</button>
-          <button className="btn btn-danger">Delete</button>
+          <Link
+            to={`/streams/edit/${stream.id}`}
+            className="btn btn-primary mr-2"
+          >
+            Edit
+          </Link>
+          <Link to={`/streams/delete/${stream.id}`} className="btn btn-danger">
+            Delete
+          </Link>
         </div>
       );
     }
