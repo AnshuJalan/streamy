@@ -33,7 +33,9 @@ const StreamList = ({ streams, currentUserId, isSignedIn, fetchStreams }) => {
       className="list-group-item d-flex justify-content-between align-items-center"
     >
       <div>
-        <h5>{stream.title}</h5>
+        <Link to={`/streams/${stream.id}`}>
+          <h5>{stream.title}</h5>
+        </Link>
         <span>{stream.description}</span>
       </div>
       {renderAdmin(stream)}
